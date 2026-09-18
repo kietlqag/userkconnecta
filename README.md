@@ -138,7 +138,3 @@ src/
 - 401: auto refresh token, redirect login khi hết phiên
 - Dev/preview: security headers trong `security-headers.ts`
 - Production CSP: `vercel.json`
-
-## Thiết kế UI
-
-[Figma — User-UI-KConnecta](https://www.figma.com/design/nbOWtCRDVQ5InzpBFJk11j/User-UI-KConnecta)
