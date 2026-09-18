@@ -2,6 +2,20 @@
 
 SPA React phục vụ client người dùng của nền tảng KConnecta. Giao tiếp với `user_be` qua REST và STOMP/WebSocket; media qua Cloudinary; live qua LiveKit; gọi P2P qua WebRTC.
 
+## English Summary
+
+| Area | Implementation in this repository |
+|---|---|
+| Runtime | React 18, TypeScript 5, Vite 6, Node.js 18+ |
+| Routing | React Router 7 with guarded and lazy-loaded routes |
+| API access | Axios client calls `/api`; Vite proxies local requests to the backend |
+| Session handling | `withCredentials` requests, access-token refresh flow, login redirect on expired sessions |
+| Realtime | STOMP/WebSocket client for chat, message notifications, signaling, and realtime screens |
+| Media/live | Cloudinary CDN usage, LiveKit client integration, optional HLS playback |
+| WebRTC | ICE/STUN/TURN configuration is environment-driven; no TURN credential is hardcoded |
+| Deployment | Vercel SPA build output in `build/` with production CSP headers |
+| Secrets | Client config uses `VITE_*` environment variables; do not place private server secrets in frontend env values |
+
 ## Ngữ cảnh hệ thống
 
 ```
